@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
