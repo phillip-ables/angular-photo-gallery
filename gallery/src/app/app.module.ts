@@ -5,9 +5,9 @@ import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component'
-import { GalleryComponent } from './gallery/gallery.component'
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { GalleryComponent } from './gallery/gallery.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
