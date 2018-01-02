@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImageService } from './shared/image.service'
+import { ImageService } from './shared/image.service';
 
 @Component ({
 	selector: 'app-image-detail',
@@ -9,7 +9,5 @@ import { ImageService } from './shared/image.service'
 
 export class ImageDetailComponent {
 	// create an image service that is going to get injected into that service into the vector of this image class
-	constructor(private imageService: ImageService)
-
-	title = 'ImageDetail';
+	constructor(private imageService: ImageService) { }
 };

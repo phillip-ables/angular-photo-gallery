@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class GalleryComponent {
 	title = 'Recent Photos';
+	visibleImages: any[] = [];
+
+	constructor(private imageService: ImageService){
+		this.visibleImages = this.imageService.getImages();
+	}
 }
