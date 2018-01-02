@@ -1,4 +1,5 @@
 import { Component, OnChanges } from '@angular/core';
+import { ImageService } from '../image/shared/image.service';
 
 @Component({
 	selector: 'app-gallery',
