@@ -1,11 +1,13 @@
 <h2>{{ title }}</h2>
 <div class="row">
 	<button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
-	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boats-on-ocean'" (click)="filterBy='boats-on-ocean'">Ocean</button>
 	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boats-on-mountain'" (click)="filterBy='boats-on-mountain'">Mountain</button>
-	<button class="btn btn-lg btn-info" [active.class]="filterBy=='boat-bikes'" (click)="filterBy='boat-bikes'">Bikes</button>
-	<button class="btn btn-lg btn-info" [active.class]="filterBy=='boat-cars'" (click)="filterBy='boat-cars'">Cars</button>
-	<button class="btn btn-lg btn-info" [active.class]="filterBy=='boat-tattoo'" (click)="filterBy='boat-tattoo'">Tattoo</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boat-bikes'" (click)="filterBy='boat-bikes'">Bikes</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boat-cars'" (click)="filterBy='boat-cars'">Cars</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boat-tattoo'" (click)="filterBy='boat-tattoo'">Tattoos</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boats-on-ocean'" (click)="filterBy='boats-on-ocean'">Ocean</button>
+	
+	
 	<ul id="thumbnailsList">
 		<li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
 			<img src="{{image.url}}" class="tn" width="200" height="160">
