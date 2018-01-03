@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ngx-bootstrap';
 
+import { ImageFilterPipe } from './image/shared/filter.pipe'
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -15,7 +16,8 @@ import { ImageService } from './image/shared/image.service';
     AppComponent,
     NavbarComponent,
     GalleryComponent,
-    ImageDetailComponent
+    ImageDetailComponent,
+    ImageFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,7 @@ import { ImageService } from './image/shared/image.service';
     HttpModule,
     AlertModule.forRoot()
   ],
-  providers: [ImageService],
+  providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
